@@ -24,9 +24,7 @@ public class Knitting{
             System.out.println("Can you complete the pattern with what you have available?");
             System.out.println(pattern.needleAvailable == pattern.needleType);
             System.out.println("You'll have completed this pattern in " + pattern.projectTime + " hours - keep going!");
-        
-            System.out.println("This is a git test");
-        
+          
         }
     
     }
