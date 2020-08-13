@@ -12,7 +12,11 @@ public class Coffee {
         typeCoffee = whichCoffee;
     }
 
-
+    public void makeAnotherCoffee(String order, int bill){
+        price = price + bill;
+        System.out.println("One new coffe, a " + order + " coming right up!");
+        System.out.println("That brings your bill to " + price + " pounds, please!");
+    }
 
     public static void main(String[] args){
 
@@ -23,6 +27,7 @@ public class Coffee {
         System.out.println("If I'm making a luxury order, it comes to " + luxuryOrder.price);
         System.out.println("If there's multiple people, it would be very expensive at " + luxuryOrder.price * luxuryOrder.ordered);
 
+        usualOrder.makeAnotherCoffee("Cappuccino", 4);
     }
 
 }
